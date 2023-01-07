@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To Do List</title>
+
+	<link rel="stylesheet" href="main.css" />
+	<style>
+#grad1 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+</style>
+</head>
+<body>
+	<div id="grad1"></div>
+	<header>
+        <h3>To Do List</h3>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Come and talk to the listening bank..."/>
+			<input 
+				type="Submit"
+				id="new-task-submit" 
+				value="Add" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks to perform:-</h2>
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+	<div id="grad1"></div>
+</body>
+</html>
